@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyOrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_property" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="On Progress.."
+                    android:textColor="#ef6558"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/p3"
+                    app:civ_border_color="#00000000"
+                    app:civ_border_width="2dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/propertyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Property Name"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+                        <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/street1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="14 Street/3rd Block"
+                            android:textColor="#A2A2A2"
+                            android:textSize="12dp" />
+
+                        <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/street2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Super Build-up Area:1060 Sq.Ft"
+                            android:textColor="#A2A2A2"
+                            android:textSize="12dp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="$2200"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$55/Sq.Ft"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="#A2A2A2"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_bed" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/bedCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="0dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_parking" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/carParking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="0dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_swimming_pool" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/swimmingPool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/ic_phone"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_gravity="center_vertical"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#cacaca"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_marginTop="10dp"
+                    >
+                    <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Completed!!"
+                        android:textColor="#2ebcff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/p3"
+                            app:civ_border_color="#00000000"
+                            app:civ_border_width="2dp"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                    android:id="@+id/propertyName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Property Name"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/street1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:text="14 Street/3rd Block"
+                                android:textColor="#A2A2A2"
+                                android:textSize="12dp" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/street2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Super Build-up Area:1060 Sq.Ft"
+                                android:textColor="#A2A2A2"
+                                android:textSize="12dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                    android:id="@+id/amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="$2200"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$55/Sq.Ft"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:textColor="#A2A2A2"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_bed" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/bedCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="0dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_parking" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/carParking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="0dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_swimming_pool" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/swimmingPool"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:src="@drawable/ic_phone"-->
+                        <!--android:layout_marginRight="30dp"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                        <!--android:layout_gravity="center_vertical"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#cacaca"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                >
+                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Completed!!"
+                    android:textColor="#2ebcff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/p3"
+                        app:civ_border_color="#00000000"
+                        app:civ_border_width="2dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/propertyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="Property Name"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+                        <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/street1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="14 Street/3rd Block"
+                            android:textColor="#A2A2A2"
+                            android:textSize="12dp" />
+
+                        <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/street2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Super Build-up Area:1060 Sq.Ft"
+                            android:textColor="#A2A2A2"
+                            android:textSize="12dp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                android:id="@+id/amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="$2200"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$55/Sq.Ft"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="#A2A2A2"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_bed" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/bedCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="0dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_parking" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/carParking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="0dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_swimming_pool" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/swimmingPool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:text="3"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/ic_phone"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_gravity="center_vertical"/>-->
+                </LinearLayout>
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#cacaca"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="90dp">
+                    <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Completed!!"
+                        android:textColor="#2ebcff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/p3"
+                            app:civ_border_color="#00000000"
+                            app:civ_border_width="2dp"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                    android:id="@+id/propertyName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Property Name"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/street1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:text="14 Street/3rd Block"
+                                android:textColor="#A2A2A2"
+                                android:textSize="12dp" />
+
+                            <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/street2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Super Build-up Area:1060 Sq.Ft"
+                                android:textColor="#A2A2A2"
+                                android:textSize="12dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Medium
+                                    android:id="@+id/amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="$2200"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$55/Sq.Ft"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:textColor="#A2A2A2"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/ic_bed" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/bedCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="0dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_parking" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/carParking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="0dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_swimming_pool" />
+
+                                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/swimmingPool"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="3"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:src="@drawable/ic_phone"-->
+                        <!--android:layout_marginRight="30dp"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                        <!--android:layout_gravity="center_vertical"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#cacaca"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/imageView"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/circle" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:background="#fff"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/layoutHome"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_home"/>
+                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_shopping_cart_blue_24dp"/>
+                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2ebcff"
+                    android:text="My Order"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_brush_white_24dp"
+                    app:civ_circle_background_color="#2ebcff"
+                    app:civ_border_color="#00000000"
+                    app:civ_border_width="2dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_home_phn"/>
+
+                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSetting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_setting"/>
+                <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="20dp"
+                android:background="#acacac"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#acacac"/>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>
