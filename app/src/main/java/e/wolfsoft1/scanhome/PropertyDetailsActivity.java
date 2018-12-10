@@ -60,6 +60,7 @@ public class PropertyDetailsActivity extends AppCompatActivity implements OnMapR
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PropertyDetailsActivity.this, MyOrderActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -68,6 +69,7 @@ public class PropertyDetailsActivity extends AppCompatActivity implements OnMapR
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PropertyDetailsActivity.this, CreateActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -76,6 +78,7 @@ public class PropertyDetailsActivity extends AppCompatActivity implements OnMapR
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PropertyDetailsActivity.this, HomeActivity.class);
+                finish();
                 startActivity(intent);
             }
         });

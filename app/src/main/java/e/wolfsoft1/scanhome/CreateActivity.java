@@ -22,6 +22,7 @@ public class CreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CreateActivity.this, MyOrderActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -30,6 +31,7 @@ public class CreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CreateActivity.this, HomeActivity.class);
+                finish();
                 startActivity(intent);
             }
         });

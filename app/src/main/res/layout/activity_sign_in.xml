@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="e.wolfsoft1.scanhome.SignInActivity">
-    <ImageView
+    <TextView
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginTop="100dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/eye_scan"/>
+        android:text="RUMAA"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="52sp"/>
     <e.wolfsoft1.scanhome.customfonts.MyTextView_Roboto_Regular
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

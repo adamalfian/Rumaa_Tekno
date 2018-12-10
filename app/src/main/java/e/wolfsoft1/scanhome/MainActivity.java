@@ -18,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent=new Intent(MainActivity.this,SignInActivity.class);
+                finish();
                 startActivity(intent);
-
-
             }
         });
 

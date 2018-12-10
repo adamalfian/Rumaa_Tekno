@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-wallet-license-11.4.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-11.4.2.aar/2cf2c83a4c922f113a1865d9c687a51e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-11.4.2.aar/2cf2c83a4c922f113a1865d9c687a51e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-11.4.2.aar/c1cc3965c1f548dfa977e26244c984a7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-11.4.2.aar/c1cc3965c1f548dfa977e26244c984a7/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

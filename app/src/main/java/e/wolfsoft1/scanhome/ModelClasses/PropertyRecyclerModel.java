@@ -1,5 +1,9 @@
 package e.wolfsoft1.scanhome.ModelClasses;
 
+import android.graphics.Bitmap;
+import android.media.Image;
+import android.widget.ImageView;
+
 /**
  * Created by wolfsoft1 on 8/3/18.
  */
@@ -7,16 +11,6 @@ package e.wolfsoft1.scanhome.ModelClasses;
 public class PropertyRecyclerModel {
 
     String propertyName,street1,street2,amount,bedCount,carParking,swimmingpool;
-
-    public PropertyRecyclerModel(String propertyName, String street1, String street2, String amount, String bedCount, String carParking, String swimmingpool) {
-        this.propertyName = propertyName;
-        this.street1 = street1;
-        this.street2 = street2;
-        this.amount = amount;
-        this.bedCount = bedCount;
-        this.carParking = carParking;
-        this.swimmingpool = swimmingpool;
-    }
 
     public String getPropertyName() {
         return propertyName;
@@ -71,6 +65,17 @@ public class PropertyRecyclerModel {
     }
 
     public void setSwimmingpool(String swimmingpool) {
+        this.swimmingpool = swimmingpool;
+    }
+
+
+    public PropertyRecyclerModel(String propertyName, String street1, String street2, String amount, String bedCount, String carParking, String swimmingpool) {
+        this.propertyName = propertyName;
+        this.street1 = street1;
+        this.street2 = street2;
+        this.amount = amount;
+        this.bedCount = bedCount;
+        this.carParking = carParking;
         this.swimmingpool = swimmingpool;
     }
 }

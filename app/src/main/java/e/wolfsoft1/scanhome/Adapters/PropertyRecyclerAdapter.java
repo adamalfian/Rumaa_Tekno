@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import e.wolfsoft1.scanhome.ModelClasses.PropertyRecyclerModel;
@@ -22,15 +23,21 @@ import e.wolfsoft1.scanhome.R;
 public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyclerAdapter.MyViewHolder> {
 
         Context context;
+        private ArrayList<Integer> IMAGES;
 
+    public void SetImages(Context context, ArrayList<Integer> IMAGES) {
+        this.context = context;
+        this.IMAGES = IMAGES;
+    }
 
-        private List<PropertyRecyclerModel> OfferList;
+    private List<PropertyRecyclerModel> OfferList;
 
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
 
 
             TextView propertyName,street1,street2,amount,bedCount,carParking,swimmingpool;
+            ImageView ivRumah;
 
             public MyViewHolder(View view) {
                 super(view);
@@ -42,6 +49,7 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
                 bedCount=(TextView) view.findViewById(R.id.bedCount);
                 carParking=(TextView) view.findViewById(R.id.carParking);
                 swimmingpool=(TextView) view.findViewById(R.id.swimmingPool);
+                ivRumah= view.findViewById(R.id.imageRumah);
             }
 
         }
@@ -74,8 +82,7 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
             holder.bedCount.setText(lists.getBedCount());
             holder.carParking.setText(lists.getCarParking());
             holder.swimmingpool.setText(lists.getSwimmingpool());
-
-
+            //holder.ivRumah.setImageResource(IMAGES.get(position));
         }
 
 

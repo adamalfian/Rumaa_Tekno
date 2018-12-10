@@ -19,6 +19,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FirstActivity.this,MainActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -29,6 +30,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FirstActivity.this,SignInActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -39,6 +41,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FirstActivity.this,HomeActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -49,6 +52,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FirstActivity.this,PropertyDetailsActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
