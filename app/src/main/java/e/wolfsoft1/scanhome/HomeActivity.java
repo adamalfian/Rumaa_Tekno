@@ -40,20 +40,11 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         HomeActivity.this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-       refine=(TextView)findViewById(R.id.refine);
        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
        layoutMyOrder = findViewById(R.id.layoutOrder);
        layoutForm = findViewById(R.id.layoutForm);
        layoutHome = findViewById(R.id.layoutHome);
 
-       refine.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent intent = new Intent(HomeActivity.this,PropertyDetailsActivity.class);
-               finish();
-               startActivity(intent);
-           }
-       });
 
        layoutMyOrder.setOnClickListener(new View.OnClickListener() {
            @Override

@@ -1,6 +1,7 @@
 package e.wolfsoft1.scanhome.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
@@ -13,7 +14,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import e.wolfsoft1.scanhome.HomeActivity;
 import e.wolfsoft1.scanhome.ModelClasses.PropertyRecyclerModel;
+import e.wolfsoft1.scanhome.PropertyDetailsActivity;
 import e.wolfsoft1.scanhome.R;
 
 /**
@@ -65,6 +68,15 @@ public class PropertyRecyclerAdapter  extends RecyclerView.Adapter<PropertyRecyc
             View itemView = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.recycler_view, parent, false);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    context.startActivity(new Intent(context, PropertyDetailsActivity.class));
+
+                    //startActivity(intent);
+                }
+            });
 
             return new PropertyRecyclerAdapter.MyViewHolder(itemView);
 
